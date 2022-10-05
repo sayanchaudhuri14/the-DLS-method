@@ -9,7 +9,7 @@ from scipy.optimize import minimize
 ################################Data Loading and Cleanup#############################
 #####################################################################################
 
-df = pd.read_csv(r"C:\Users\sayan\OneDrive\Desktop\Data Analysis Projects\Data\04_cricket_1999to2011.csv")
+df = pd.read_csv("../data/04_cricket_1999to2011.csv")
 
 df = df[['Match', 'Innings', 'Over', 'Runs.Remaining', 'Wickets.in.Hand']]
 df = df[df['Innings'] == 1]
